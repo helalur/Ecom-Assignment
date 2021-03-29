@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body header {
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  padding: 0 90px;
+  background: dodgerblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: grey;
+}
+
+body header .logo {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+body header .logo a img {
+  height: 100px;
+  width: 100px;
+}
+
+body header .logo p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: white;
+}
+
+body header .links {
+  min-width: 40%;
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body header .links li {
+  list-style: none;
+}
+
+body header .links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+body header .links li a:hover {
+  color: navy;
+}
+
+@media (max-width: 1399.98px) {
+  body header .logo {
+    width: 37%;
+  }
+  body header .logo p {
+    font-size: 1.2rem;
+  }
+  body header .links li a {
+    font-size: 1rem;
+  }
+}
+
+body .section-header {
+  font-size: 2rem;
+  margin: 2vh 0;
+  text-align: center;
+  color: grey;
+}
+
+body main {
+  min-height: calc(100vh - 240px);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+body main .big-img {
+  height: 50vh;
+  width: 100%;
+  background: url("img/big_img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body main .all {
+  padding: 60px 90px;
+}
+
+body main .all .cards {
+  height: 20vh;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .all .cards .card {
+  width: 24%;
+  padding: 30px;
+  border: 2px solid dodgerblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .all .cards .card span {
+  color: gray;
+  font-size: 1.8rem;
+}
+
+body main .all .cards .card span:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+body main .all .founder {
+  height: 70vh;
+  width: 100%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid dodgerblue;
+}
+
+body main .all .founder .founder-img {
+  width: 30%;
+  height: 100%;
+  background: url("img/founder.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body main .all .founder .founder-text {
+  width: 68%;
+}
+
+body main .all .founder .founder-text .founder-name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2vh 0;
+  color: grey;
+}
+
+body main .all .founder .founder-text .founder-details {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+body footer {
+  width: 100%;
+  height: 120px;
+  background: dodgerblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer address {
+  color: white;
+}
+
+@media (max-width: 1399.98px) {
+  main .all .cards {
+    height: 30vh !important;
+  }
+  main .all .cards .card span {
+    color: gray;
+    font-size: 1.5rem !important;
+  }
+  main .all .cards .card span:nth-child(1) {
+    font-size: 1.8rem !important;
+    font-weight: bold;
+  }
+  main .all .founder {
+    height: 80vh !important;
+  }
+  main .all .founder .founder-text .founder-name {
+    font-size: 1.8rem !important;
+  }
+  main .all .founder .founder-text .founder-details {
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+  }
+}
